@@ -6,6 +6,10 @@ const passport = require("passport");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");  
 
+// Load Input Validation
+const validateRegisterInput = require("../../validation/register");
+const validateLoginInput = require("../../validation/login");
+
 // Load User model
 const User = require('../../models/User');
 
@@ -18,10 +22,16 @@ router.get("/test", (req, res) => res.json({ msg: "Users works." })); // The rou
 // @desc    Register user
 // @access  Public
 router.post("/register", (req, res) => {
+    const { errors, isValid } = validateRegisterInput(req.body);
+
+    if (!isValid) {
+        return res.status(400).json(errors);
+    }           
     User.findOne({ email: req.body.email }) // asynchronous, therefore must be handled using a promise
     .then(user => {
         if (user) {
-            return res.status(400).json({ email: "Email already exists" });
+            errors.email = "Email already exists";
+            return res.status(400).json(errors);
         } else {
             avatar = gravatar.url(req.body.email, {
                 s: "200", //size
@@ -56,11 +66,18 @@ router.post("/register", (req, res) => {
 router.post("/login", (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
+    const { errors, isValid } = validateLoginInput(req.body);
+
+    if (!isValid) {
+        return res.status(400).json(errors);
+    }
 
     // Find user by email
     User.findOne({ email: email }).then(user => {
         if (!user) {
-            return res.status(404).json({ email: "User not found" });
+            errors.email = "User not found";
+            return res.status(400).json(errors);
+          
         }
 
         // Check password
@@ -88,7 +105,8 @@ router.post("/login", (req, res) => {
                     }
                 );
             } else {
-                return res.status(400).json({ password: "Password incorrect" });
+                errors.password = "Password incorrect";
+                return res.status(400).json(errors);
             }       
         });
     });
@@ -99,10 +117,17 @@ router.post("/login", (req, res) => {
 // @access  Private
 router.get(
     "/current",
-    passport.authenticate("jwt", { session: false }), 
-    (req, res) => { // callback 
-        res.json({ msg: "success" }); // just a place holder, which will be replaced with something more meaningful later
+    passport.authenticate("jwt", { session: false }),
+    (req, res) => {
+        // if passport.authenticate is successful, req contains the user's information extracted from the jwt token
+        // notice that what information to be included in res.json is up to you. Here I just chose id, name, and email.
+        res.json({
+            id: req.user.id,
+            name: req.user.name,
+            email: req.user.email
+        });
     }
 );
+
 
 module.exports = router;
