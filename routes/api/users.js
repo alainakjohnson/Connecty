@@ -2,6 +2,9 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const gravatar = require('gravatar');
+const passport = require("passport");
+const jwt = require("jsonwebtoken");
+const keys = require("../../config/keys");  
 
 // Load User model
 const User = require('../../models/User');
@@ -46,5 +49,60 @@ router.post("/register", (req, res) => {
         }
     });
 });
+
+// @route   GET /api/users/login
+// @desc    login user and return a JWT token
+// @access  Public
+router.post("/login", (req, res) => {
+    const email = req.body.email;
+    const password = req.body.password;
+
+    // Find user by email
+    User.findOne({ email: email }).then(user => {
+        if (!user) {
+            return res.status(404).json({ email: "User not found" });
+        }
+
+        // Check password
+        bcrypt.compare(password, user.password).then(isMatch => {
+            if (isMatch) {  // User matched
+                // res.json({ msg: "Success" });
+    
+                // The payload is a set of user attributes to be included in the token. You may pick whatever you want.
+                const payload = {
+                    id: user.id,
+                    name: user.name,
+                    avatar: user.avatar
+                };
+    
+                // Sign token
+                jwt.sign(
+                    payload,
+                    keys.secretOrKey,
+                    { expiresIn: 3600 }, // an hour
+                    (err, token) => { //a callback function that receives the token that jwt generates as an argument
+                        res.json({
+                            success: true,
+                            token: "Bearer " + token
+                        });
+                    }
+                );
+            } else {
+                return res.status(400).json({ password: "Password incorrect" });
+            }       
+        });
+    });
+});
+
+// @route   GET /api/users/current
+// @desc    Return current user
+// @access  Private
+router.get(
+    "/current",
+    passport.authenticate("jwt", { session: false }), 
+    (req, res) => { // callback 
+        res.json({ msg: "success" }); // just a place holder, which will be replaced with something more meaningful later
+    }
+);
 
 module.exports = router;
