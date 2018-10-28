@@ -1,3 +1,5 @@
+const express = require('express');
+
 const mongoose = require("mongoose");
 
 const app = express();
@@ -14,6 +16,7 @@ mongoose
     .catch(err => console.log(err));
 
 app.get("/", (req, res) => res.send("hello!"));
+
 
 // The actual port for the app in prodcution will come from the env. var. "PORT". For local dev., we just use 5000.
 const port = process.env.PORT || 5000;
