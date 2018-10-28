@@ -1,0 +1,41 @@
+commit ce7d8c36150564b904ab2bcc00ceeb4b9540b8ce
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Oct 28 17:18:37 2018 -0400
+
+    Completed part 1
+
+commit 284a1fc76264683069750ca3bb78e3ba76e31932
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Oct 28 16:32:51 2018 -0400
+
+    up to 3.5
+
+commit 7a7144789679edf56c26f584f896a72782d0c1e4
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Oct 28 16:02:47 2018 -0400
+
+    completed step 3.2
+
+commit 53116c1e09da004c28b756405185d7d88d081c9f
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Oct 28 15:43:04 2018 -0400
+
+    routes working
+
+commit 4b679f6454e3d48a9c587c018e4a09e1ea34ef4a
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Oct 28 15:41:15 2018 -0400
+
+    fixed untracked files
+
+commit 34362634221899c5e00012cdf01b2a44c0ad2b9e
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Oct 28 15:07:37 2018 -0400
+
+    fixed untracked files
+
+commit a6b78e8d46752f5c44e9e724b287b31d2ad36dd0
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sat Oct 27 17:31:39 2018 -0400
+
+    created a new Node.js app
