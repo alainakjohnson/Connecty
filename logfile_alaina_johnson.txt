@@ -1,3 +1,27 @@
+commit 7a0eea910a37d21fb6811cf51657c73ccb73e2c6
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Nov 4 18:25:20 2018 -0500
+
+    delete education and experience successful
+
+commit d13b87eb03c2212f12ca14f648ab5f6c3ac92976
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Nov 4 18:15:03 2018 -0500
+
+    completed adding experience and education
+
+commit 2790072a798d002cb182c63e9ec8ca909a90391d
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Nov 4 17:10:47 2018 -0500
+
+    Profile framework set up
+
+commit c4da9581d32090d2265656e910f34b3dbf0f98d4
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Oct 28 17:19:16 2018 -0400
+
+    Completed part 1
+
 commit ce7d8c36150564b904ab2bcc00ceeb4b9540b8ce
 Author: Alaina Johnson <alainakjohnson@gmail.com>
 Date:   Sun Oct 28 17:18:37 2018 -0400
