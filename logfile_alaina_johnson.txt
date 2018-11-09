@@ -1,3 +1,33 @@
+commit e6ab209af43d3f5a7925333e5eff03574d9bcc0e
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 9 12:57:31 2018 -0500
+
+    completed comment deletion
+
+commit 3562ac8d18913d741bdb052d8fada93a19a7ce77
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 9 12:45:46 2018 -0500
+
+    completed 5.6 liking and disliking
+
+commit fb806fec2546ec5bc1efe15ee118846f6cb4d6d4
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 9 12:38:14 2018 -0500
+
+    completed deleting posts 5.5
+
+commit 0e4a80bc4df98c7f4f03a640744de0711b427c0b
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 9 12:14:40 2018 -0500
+
+    completed 5.3
+
+commit 3b874faed57b17d8e408fe5e974ae6ddfced6091
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Nov 4 18:28:52 2018 -0500
+
+    successfully deleted user
+
 commit 7a0eea910a37d21fb6811cf51657c73ccb73e2c6
 Author: Alaina Johnson <alainakjohnson@gmail.com>
 Date:   Sun Nov 4 18:25:20 2018 -0500
