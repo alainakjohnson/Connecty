@@ -1,3 +1,87 @@
+commit 4d1a12b1fa0b77794df0eed503f131d195815e76
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Nov 18 16:11:19 2018 -0500
+
+    Ready for deployment to Heroku
+
+commit 67faff98c1fe75ac84ee52da1b538e0558137052
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Nov 18 15:59:44 2018 -0500
+
+    fixed untracked files
+
+commit 5a706dcb22a43313e6ef2db70d80eb8be70d0658
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Nov 18 15:45:54 2018 -0500
+
+    Error validation fixed
+
+commit c18aea5bf9dd09ad285951f8fcf76d34b92535c9
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Nov 18 15:37:48 2018 -0500
+
+    successfully registered a user
+
+commit 8c8fcfddfd420d03d286e70fad2eb7723a0aa5b4
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Thu Nov 15 13:21:31 2018 -0500
+
+    Completed signup page
+
+commit e5a7ea7902d181d1a6fc8d747983fa0b455422c5
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Thu Nov 15 13:00:06 2018 -0500
+
+    A tags replaced with Link
+
+commit 0f6d5d842d1bce6334a4fe784579bd5656bbeec8
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Thu Nov 15 12:48:33 2018 -0500
+
+    Set up register route
+
+commit da2aa746e951184ae8e65c29e10098d337c7e53b
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Thu Nov 15 12:33:58 2018 -0500
+
+    implemented landing component
+
+commit 194b9fb21ff3480eb8b2b03dc7a8ac624f212472
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Thu Nov 15 12:26:08 2018 -0500
+
+    implemented Footer component
+
+commit de8582d2dd41072e4934864e69e1dbce6a3d59d0
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Thu Nov 15 12:19:30 2018 -0500
+
+    NavBar implemented
+
+commit 3f6b5994bd66340a211ed6fa7dbbce5fb6bf14f3
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Thu Nov 15 12:00:54 2018 -0500
+
+    Added bootstrap
+
+commit 659b8bd1a01009b1de42f3e1f2446d0a1144c860
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Thu Nov 15 11:56:26 2018 -0500
+
+    cleaned up client folder
+
+commit 03f0d880dc955762e61fd542c49b53f39465a2a7
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Thu Nov 15 11:48:23 2018 -0500
+
+    Created new react app, set up concurrently
+
+commit 37ed307cad7ec252b9792d00e21c5fac0bd928ae
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 9 12:58:10 2018 -0500
+
+    completed assignment
+
 commit e6ab209af43d3f5a7925333e5eff03574d9bcc0e
 Author: Alaina Johnson <alainakjohnson@gmail.com>
 Date:   Fri Nov 9 12:57:31 2018 -0500
