@@ -5,6 +5,7 @@ const passport = require("passport");
 const users = require("./routes/api/users");
 const profiles = require("./routes/api/profiles");
 const posts = require("./routes/api/posts");
+const path = require("path");
 
 const app = express()
 
@@ -37,7 +38,17 @@ mongoose
     app.use("/api/posts", posts);
 
 
-// The actual port for the app in prodcution will come from the env. var. "PORT". For local dev., we just use 5000.
+    
+// Server static assets if in production
+if (process.env.NODE_ENV === "production") {
+    // Set static folder
+    app.use(express.static("client/build"));
+
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    });
+}
+
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
