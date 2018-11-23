@@ -3,6 +3,7 @@ import axios from 'axios';
 import classnames from 'classnames';
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
+import PropTypes from "prop-types";
 
 class Register extends Component {
 
@@ -132,6 +133,11 @@ class Register extends Component {
     }
 }
 
+Register.propTypes = {
+    registerUser: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired
+};
 
 const mapStateToProps = state => ({
     auth: state.auth,

@@ -6,19 +6,8 @@ import Landing from './components/layout/Landing.js'
 import Register from './components/auth/Register.js'
 import Login from './components/auth/Login.js'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { createStore, applyMiddleware } from "redux";
-import { composeWithDevTools } from "redux-devtools-extension";
 import { Provider } from "react-redux";
-import thunk from "redux-thunk";
-import rootReducer from "./reducers";
-
-const initialState = {};
-const middleware = [thunk];
-const store = createStore(
-    rootReducer,
-    initialState,
-    composeWithDevTools(applyMiddleware(...middleware))
-);
+import store from "./store";
 
 class App extends Component {
   render() {
