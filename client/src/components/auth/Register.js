@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 import classnames from 'classnames';
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
@@ -19,6 +19,12 @@ class Register extends Component {
 
         this.onInputChange=this.onInputChange.bind(this);
         this.onFormSubmit=this.onFormSubmit.bind(this);
+    }
+
+    componentDidMount() {
+        if (this.props.auth.isAuthenticated) {
+            this.props.history.push("/landing");
+        }
     }
     
     componentWillReceiveProps(nextProps) {
@@ -42,10 +48,10 @@ class Register extends Component {
             password2: this.state.password2
         };
     
-        axios
-            .post("api/users/register", newUser)
-            .then(res => this.props.history.push("/login"))
-            .catch(err => this.setState({errors: err.response.data}));
+        // axios
+        //     .post("api/users/register", newUser)
+        //     .then(res => this.props.history.push("/login"))
+        //     .catch(err => this.setState({errors: err.response.data}));
 
             this.props.registerUser(newUser, this.props.history);
         }
@@ -148,5 +154,3 @@ export default connect(
     mapStateToProps,
     { registerUser }
 )(Register);
-
-//export default Register;
