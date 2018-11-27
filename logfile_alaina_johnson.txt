@@ -1,3 +1,51 @@
+commit 5afba5e12de3acc69bb644636e253489aceb6b73
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 23 21:32:30 2018 -0500
+
+    complete logout component
+
+commit 5f445f183d6280ae52a182415cf3c02454e9e212
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 23 21:22:07 2018 -0500
+
+    Login screen complete.
+
+commit 41541f317029c73221e2d9f13e0a3be843c5040f
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 23 15:55:00 2018 -0500
+
+    cleaned up App
+
+commit 46662e5474019025764a46d27c03e86246af27dc
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 23 15:50:36 2018 -0500
+
+    updated Register
+
+commit 9eeced088069152798283c3bdf6018a785fe1055
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 23 15:39:44 2018 -0500
+
+    authActions implement
+
+commit 52be4e0c6d9de32d7a23d9f79cc9c54a05ede2c9
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 23 15:37:45 2018 -0500
+
+    Implemented Reducers
+
+commit a02d47dee139d5f2fe62136a6a8de825464009dc
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Fri Nov 23 15:25:48 2018 -0500
+
+    Added Redux Thunk
+
+commit b7aaa942202c3d67e93e4a47746928c341ee9d34
+Author: Alaina Johnson <alainakjohnson@gmail.com>
+Date:   Sun Nov 18 16:16:24 2018 -0500
+
+    Completed successfully
+
 commit 4d1a12b1fa0b77794df0eed503f131d195815e76
 Author: Alaina Johnson <alainakjohnson@gmail.com>
 Date:   Sun Nov 18 16:11:19 2018 -0500
